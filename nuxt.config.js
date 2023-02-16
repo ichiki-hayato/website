@@ -1,4 +1,10 @@
 export default {
+  // Target: https://go.nuxtjs.dev/config-target
+  target: 'static',
+  privateRuntimeConfig: {
+    apiKey: process.env.API_KEY,
+    serviceId: process.env.SERVICE_DOMAIN,
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'ichikihayato_lp_202303',
@@ -42,7 +48,15 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    'nuxt-microcms-module',
   ],
+  microcms: {
+    options: {
+      serviceDomain: process.env.SERVICE_DOMAIN,
+      apiKey: process.env.API_KEY,
+    },
+    mode: process.env.NODE_ENV === 'production' ? 'server' : 'all',
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
