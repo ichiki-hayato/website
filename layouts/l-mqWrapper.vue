@@ -1,18 +1,11 @@
 <template lang="pug">
-	.l-container
-		c-mainvisualSet01
-		c-snsWidgetSet01
-		
-		c-ManifestSet01
-		c-profileSet01
-		c-supportSet01
-		c-accessSet01
+	.l-mqWrapper
+		nuxt
+
 
 </template>
 <script>
 	export default {
-		name: 'IndexPage',
-		layout: "l-mainWrapper01",
 		data() {
 			return {
 				// data: [],
@@ -22,9 +15,14 @@
 		created() {},
 		mounted() {},
 		computed:{},
-	}
+	};
 </script>
 <style lang="stylus">
 	@import "~/assets/stylus/_s_config"
 	@import "~/assets/stylus/_s_mixin"
+	.l-mqWrapper
+		+MQ_MIN_MAX(RES_WID_SMALL01,CONTENTS_WID_MEDIUM01)
+			padding 0 10px
+		+MQ_MAX(RES_WID_SMALL01)
+			padding 0 vwsp(10)
 </style>

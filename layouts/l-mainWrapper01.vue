@@ -28,4 +28,9 @@
 
 		.l-mainWrapper01
 			display flex
+			.layoutWrapper
+				position relative
+				width 80%
+				min-width calc(100% - 300px)
+				max-width calc(100% - 220px)
 </style>
