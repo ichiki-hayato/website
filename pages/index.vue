@@ -2,11 +2,11 @@
 	.l-container
 		c-mainvisualSet01
 		c-snsWidgetSet01
-		
 		c-ManifestSet01
+		c-profileSlider01
 		c-profileSet01
 		c-supportSet01
-		c-accessSet01
+		c-profileSlider01(:reverse = 'true' className = 'is-bottom')
 
 </template>
 <script>

@@ -21,10 +21,13 @@
 	@import "~/assets/stylus/_s_mixin"
 
 	.c-sideContentsSet01
+		position fixed
+		top 0
+		left 0
 		width 20%
 		max-width 300px
 		min-width 220px
 		height 100svh
 		background-color #F00
-	
+		z-index 9000
 </style>

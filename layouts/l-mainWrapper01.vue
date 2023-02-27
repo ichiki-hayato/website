@@ -28,6 +28,7 @@
 
 		.l-mainWrapper01
 			display flex
+			justify-content flex-end
 			.layoutWrapper
 				position relative
 				width 80%
