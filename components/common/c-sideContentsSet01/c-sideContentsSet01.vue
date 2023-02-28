@@ -1,6 +1,9 @@
 <template lang="pug">
-	section.c-sideContentsSet01
-		p c-sideContentsSet01
+	.c-sideContentsSet01
+		.componentWrapper
+			.block.is-type01
+			.block.is-type02
+			.block.is-type03
 </template>
 <script>
 	export default {
@@ -30,4 +33,18 @@
 		height 100svh
 		background-color #F00
 		z-index 9000
+
+		.componentWrapper
+			.block
+				position absolute
+				top 0
+				left 0
+				width 100%
+				height 100%
+
+			.block.is-type01
+				background-color #31C0F0
+
+		+MQ_MAX(RES_WID_MEDIUM01)
+			display none
 </style>

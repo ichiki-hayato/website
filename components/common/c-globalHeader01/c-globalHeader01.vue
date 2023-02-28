@@ -1,10 +1,6 @@
 <template lang="pug">
 	section.c-globalHeader01
 		.componentWrapper
-			.group.is-logo
-				h1.logo
-					img(src="/header_logo01.png", alt="大阪維新の会")
-			
 			.group.is-menu
 				.block.is-btn
 					.inner
@@ -22,6 +18,7 @@
 								a(href="#") プロフィール
 </template>
 <script>
+	import inView from '~/assets/javascript/_j_inView/_j_inView.js'
 	export default {
 		name: 'c-globalHeader01',
 		data() {
@@ -40,8 +37,9 @@
 	@import "~/assets/stylus/_s_mixin"
 
 	.c-globalHeader01
+		container-type inline-size
 		display block
-		position absolute
+		position fixed
 		top 0
 		left 0
 		width 100%
@@ -49,21 +47,16 @@
 		.componentWrapper
 			padding 3%
 			.group
-				&.is-logo
-					.logo
-						width 21.5%
-						img
-							width 100%
+				
 				&.is-menu
 					.block
 						&.is-btn
 							display inline-block
 							position fixed
-							top 3vw
-							right 3vw
-							width 5.5%
-							padding-top 5.5%
-							height 0
+							top clamp(20px, 3svw, 40px)
+							right clamp(20px, 3svw, 40px)
+							width clamp(40px, 5.5svw, 60px)
+							height clamp(40px, 5.5svw, 60px)
 							background linear-gradient(to right, #1F6ECA, #145EB5)
 							border-radius 6px
 							box-shadow 0 4px 4px rgba(0,0,0,0.25)

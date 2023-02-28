@@ -32,14 +32,27 @@
 	@import "~/assets/stylus/_s_mixin"
 
 	.c-snsWidgetSet01
-		padding 90px 3% 80px
+		container-type inline-size
+		padding clamp(50px, 6%, 80px) clamp(20px, 3%, 40px)
 		.componentWrapper
 			display flex
 			justify-content space-between
 			max-width 1360px
 			margin 0 auto
+
+			+MQ_MAX(RES_WID_SMALL01)
+				flex-direction column
+				justify-content center
+				align-items center
+				
 			.group
-				width calc(50% - 3%)
+				width 48%
+				+MQ_MAX(RES_WID_SMALL01)
+					width 100%
+
+					&:nth-of-type(n + 2)
+						margin-top 6%
+
 				&.is-youtube
 					.block.is-youtube
 						position relative
@@ -60,6 +73,9 @@
 						padding-top 56.25%
 						border-radius 10px
 						overflow hidden
+						+MQ_MAX(RES_WID_SMALL01)
+							padding-top 80%
+							
 						&:after
 							content ''
 							display inline-block

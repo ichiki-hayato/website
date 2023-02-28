@@ -3,37 +3,15 @@
 		.componentWrapper
 			.group.is-contents
 				.swiper-wrapper
-					.swiper-slide
+					.swiper-slide(v-for="image in images" :key="image.id")
 						p.image
-							img(src="https://placehold.jp/280x280.png", alt="")
-					.swiper-slide
-						p.image
-							img(src="https://placehold.jp/280x280.png", alt="")
-					.swiper-slide
-						p.image
-							img(src="https://placehold.jp/280x280.png", alt="")
-					.swiper-slide
-						p.image
-							img(src="https://placehold.jp/280x280.png", alt="")
-					.swiper-slide
-						p.image
-							img(src="https://placehold.jp/280x280.png", alt="")
-					.swiper-slide
-						p.image
-							img(src="https://placehold.jp/280x280.png", alt="")
-					.swiper-slide
-						p.image
-							img(src="https://placehold.jp/280x280.png", alt="")
-					.swiper-slide
-						p.image
-							img(src="https://placehold.jp/280x280.png", alt="")
-							
+							img(:src="`/images/contents/${image}`")
 
 </template>
 <script>
 	import Swiper from 'swiper/swiper-bundle.min'
 	import 'swiper/swiper-bundle.css'
-	let thumbnailSlider;
+	
 	export default {
 		name: 'c-profileSlider01',
 		data() {
@@ -49,23 +27,28 @@
 			className: {
 				type: String,
 				default: 'is-top',
-			}
+			},
+			images: [],
 		},
 		created() {},
 		mounted() {
+			let thumbnailSlider;
 			let target = document.querySelector('.c-profileSlider01.' + this.className + ' .group.is-contents');
-			thumbnailSlider = new Swiper(target, {
-				slidesPerView: 'auto',
-				spaceBetween: 0,
-				loop: true,
-				speed: 20000,
-				allowTouchMove: false,
-				centeredSlides : true,
-				autoplay: {
-					delay: 0,
-					reverseDirection: (this.reverse == true) ? true : false,
-				},
-			})
+			let _t = this;
+			setTimeout(function(){
+				thumbnailSlider = new Swiper(target, {
+					slidesPerView: 'auto',
+					spaceBetween: 0,
+					loop: true,
+					speed: 20000,
+					allowTouchMove: false,
+					centeredSlides : true,
+					autoplay: {
+						delay: 0,
+						reverseDirection: (_t.reverse == true) ? true : false,
+					},
+				})
+			}, 100)
 		},
 		computed:{},
 	}
@@ -81,6 +64,15 @@
 					transition-timing-function linear
 					.swiper-slide
 						width 280px
+
+						+MQ_MAX(RES_WID_MEDIUM01)
+							width 200px
+						
+						+MQ_MAX(RES_WID_SMALL01)
+							width 140px
+
+						img
+							width 100%
 										
 
 

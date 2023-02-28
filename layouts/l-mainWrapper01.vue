@@ -23,6 +23,9 @@
 	};
 </script>
 <style lang="stylus">
+	@import "~/assets/stylus/_s_config"
+	@import "~/assets/stylus/_s_mixin"
+
 	#l-contentsTop
 		overflow hidden
 
@@ -34,4 +37,9 @@
 				width 80%
 				min-width calc(100% - 300px)
 				max-width calc(100% - 220px)
+
+				+MQ_MAX(RES_WID_MEDIUM01)
+					width 100%
+					min-width 0
+					max-width 100%
 </style>

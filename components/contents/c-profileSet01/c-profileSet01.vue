@@ -5,7 +5,7 @@
 				.inner
 					.block.is-name
 						h2.name
-							img(src="/section03_name_img01.png", alt="市来 ハヤト")
+							m-basePicture(src="section03_name_img01.png", alt="市来 ハヤト")
 					.block.is-title
 						h3.title
 							span 興味を持ったらすぐに飛び込んできた人生。
@@ -63,6 +63,7 @@
 	@import "~/assets/stylus/_s_config"
 	@import "~/assets/stylus/_s_mixin"
 	.c-profileSet01
+		container-type inline-size
 		background linear-gradient(to right, #069CDC, #0074A6)
 		.componentWrapper
 			display flex
@@ -70,35 +71,60 @@
 			background-repeat no-repeat
 			background-size contain
 			background-position bottom left
-			background-image url("/section03_img01.png")
+			background-image url("~/assets/images/contents/section03_img01.png")
 			
 			.group.is-contents
 				display flex
 				justify-content flex-end
-				padding 130px 0 170px
+				padding clamp(60px, 10%, 130px) clamp(20px, 3%, 30px) clamp(80px, 16%, 170px)
 				max-width 1000px
 				width 100%
+
+				
 				.inner
 					max-width 730px
+					+MQ_MAX(RES_WID_SMALL01)
+						max-width 100%
 					img
 						max-width 100%
 					.block
 						&.is-name
 							margin-bottom 45px
+							+MQ_MAX(RES_WID_LARGE01)
+								margin-bottom 30px
+							
 							.name
 								max-width 500px
+								+MQ_MAX(RES_WID_LARGE01)
+									max-width 350px
 						&.is-title
 							margin-bottom 20px
 							.title
 								color #fff
 								fontSize(25)
 								font-weight bold
+
+								+MQ_MAX(RES_WID_LARGE01)
+									filter: drop-shadow(1px 1px 10px rgba(#000000, 0.4));
+									fontSize(20)
+								
+								+MQ_MAX(RES_WID_SMALL01)
+									fontSize(18)
+
 						&.is-lead
 							margin-bottom 25px
 							.text
 								color #fff
 								fontSize(16)
 								font-weight bold
+
+								+MQ_MAX(RES_WID_LARGE01)
+									filter: drop-shadow(1px 1px 10px rgba(#000000, 0.4));
+									fontSize(14)
+								
+								+MQ_MAX(RES_WID_SMALL01)
+									fontSize(13)
+
 						&.is-frame
 							margin-bottom 30px
 							padding 20px 30px
@@ -109,6 +135,12 @@
 									margin-bottom 10px
 									.text
 										fontSize(14)
+
+										+MQ_MAX(RES_WID_LARGE01)
+											fontSize(13)
+										
+										+MQ_MAX(RES_WID_SMALL01)
+											fontSize(12)
 								&.is-list
 									ul.list
 										li
@@ -116,6 +148,13 @@
 											padding-left 15px
 											fontSize(14)
 											font-weight bold
+
+											+MQ_MAX(RES_WID_LARGE01)
+												fontSize(13)
+											
+											+MQ_MAX(RES_WID_SMALL01)
+												fontSize(12)
+
 											&:not(:last-child)
 												margin-bottom 5px
 											&:before
@@ -132,10 +171,20 @@
 							display flex
 							flex-wrap wrap
 							justify-content space-between
+
 							.area.is-btn
 								width calc(50% - 5px)
+
+								+MQ_MAX(RES_WID_SMALL01)
+									width 100%
+
+								&:nth-child(n+2)
+									+MQ_MAX(RES_WID_SMALL01)
+										margin-top 10px
+								
 								&:nth-child(n+3)
 									margin-top 10px
+
 								a.btn
 									display block
 									position relative
@@ -148,8 +197,18 @@
 									text-align center
 									border-radius 100px
 									transition all 0.3s
+
+									+MQ_MAX(RES_WID_LARGE01)
+										padding 20px 50px
+										fontSize(13)
+									
+									+MQ_MAX(RES_WID_SMALL01)
+										padding 18px 40px
+										fontSize(12)
+
 									&:hover
 										opacity 0.7
+
 									&:before,&:after
 										content ''
 										display inline-block
@@ -157,6 +216,7 @@
 										top 0
 										bottom 0
 										margin auto 0
+
 									&:before
 										left 27px
 										width 32px
@@ -164,6 +224,17 @@
 										background-repeat no-repeat
 										background-size contain
 										background-position center
+
+										+MQ_MAX(RES_WID_LARGE01)
+											left 20px
+											width 28px
+											height 28px
+										
+										+MQ_MAX(RES_WID_SMALL01)
+											left 18px
+											width 25px
+											height 25px
+
 									&:after
 										right 17px
 										width 8px
@@ -173,26 +244,41 @@
 										transform-origin center
 										transform rotate(45deg)
 										box-sizing border-box
+
+										+MQ_MAX(RES_WID_LARGE01)
+											width 6px
+											height 6px
+											border-width 2px 2px 0 0
+										
+										+MQ_MAX(RES_WID_SMALL01)
+											width 5px
+											height 5px
+											border-width 1px 1px 0 0
+
 									&.is-twitter
 										background-color #2698F0
 										&:before
-											background-image url("/section03_sns_icon01.png")
+											background-image url("~/assets/images/contents/section03_sns_icon01.png")
+									
 									&.is-youtube
 										background-color #FC0303
 										&:before
-											background-image url("/section03_sns_icon02.png")
+											background-image url("~/assets/images/contents/section03_sns_icon02.png")
+									
 									&.is-facebook
 										background-color #1877F2
 										&:before
-											background-image url("/section03_sns_icon03.png")
+											background-image url("~/assets/images/contents/section03_sns_icon03.png")
+									
 									&.is-instagram
 										background linear-gradient(45deg, #FFF500, #F90000, #3300FF)
 										&:before
-											background-image url("/section03_sns_icon04.png")
+											background-image url("~/assets/images/contents/section03_sns_icon04.png")
+									
 									&.is-line
 										background-color #06C755
 										&:before
-											background-image url("/section03_sns_icon05.png")
+											background-image url("~/assets/images/contents/section03_sns_icon05.png")
 										
 
 
