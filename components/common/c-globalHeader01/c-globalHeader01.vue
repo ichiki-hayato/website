@@ -11,11 +11,9 @@
 					nav.is-global
 						ul
 							li
-								a(href="#") ホーム
+								a(href="/") ホーム
 							li
-								a(href="#") 政策
-							li
-								a(href="#") プロフィール
+								a(href="/news") 新着情報
 </template>
 <script>
 	import inView from '~/assets/javascript/_j_inView/_j_inView.js'
@@ -60,6 +58,7 @@
 							background linear-gradient(to right, #1F6ECA, #145EB5)
 							border-radius 6px
 							box-shadow 0 4px 4px rgba(0,0,0,0.25)
+							z-index 9999
 							.inner
 								display flex
 								flex-direction column
@@ -77,6 +76,27 @@
 									height 16.7%
 									background-color #fff
 						&.is-global
-							display none
+							display block
+							position absolute
+							top 0
+							right 0
+							width 300px
+							height 100svh
+							padding 20px
+							background-color #FFF
+							box-sizing border-box
+
+							
+							nav.is-global
+								a
+									text-decoration none
+								&>ul
+									&>li
+										margin-bottom 20px
+										&>a
+											fontSize(16)
+										&:last-child
+											margin-bottom 0
+
 
 </style>

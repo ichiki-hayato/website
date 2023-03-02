@@ -3,7 +3,7 @@
 		.l-mainWrapper01
 			c-sideContentsSet01
 			.layoutWrapper
-				c-globalHeader01
+				//- c-globalHeader01
 				nuxt
 				c-globalFooter01
 

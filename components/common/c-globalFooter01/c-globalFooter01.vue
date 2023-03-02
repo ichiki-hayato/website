@@ -8,7 +8,7 @@
 						br
 						| 大阪府高槻市紺屋町11-1 FKビル202号室
 					p.btn
-						a(href="") 
+						a(href="https://www.google.com/maps?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E9%AB%98%E6%A7%BB%E5%B8%82%E7%B4%BA%E5%B1%8B%E7%94%BA11-1+FK%E3%83%93%E3%83%AB202%E5%8F%B7%E5%AE%A4&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjQ242Nw7z9AhXSSPUHHWk_BXkQ_AUoAXoECAEQAw", target="_blank")
 							span Google Map
 					p.text 電話番号：080-4390-0066
 				
@@ -39,6 +39,53 @@
 		.componentWrapper
 			max-width 1000px
 			margin 0 auto
+			padding 30px 10px
 			color #FFF
+
+			.block.is-contents
+				fontSize(14)
+
+				.text
+					margin-bottom 20px
+					&:last-child
+						margin-bottom 0
+				.btn
+					display table
+					max-width 200px
+					width 100%
+					margin-bottom 20px
+					color #FFF
+					background-color #FFF
+					border-radius 100px
+					box-sizing border-box
+					font-weight bold
+					text-align center
+
+					+MQ_MAX(RES_WID_MEDIUM01)
+						max-width 160px
+						padding 15px 30px
+
+					+MQ_MAX(RES_WID_SMALL01)
+						max-width 140px
+						padding 15px 20px
+				
+					a
+						display block
+						padding 15px 40px
+						color #000
+						border-radius 100px
+						text-decoration none
+						transition all 0.3s ease
+						
+						&:hover
+							background-color #DFDFDF
+					
+
+			.block.is-copyright
+				margin-top 20px
+				padding-top 20px
+				border-top 1px solid #3A3A3A
+				fontSize(11)
+				text-align center
 	
 </style>

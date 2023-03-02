@@ -37,10 +37,14 @@
 							p.text 議員は「○○先生」と呼ばれてはいけない。
 								br
 								| 地元の方があってこその議員であり、「先生」という言葉は有権者の皆さまに当てはまると感じています。実際、池下卓事務所には様々なご相談や陳情事が寄せられており、そこから学びや政策につながることが圧倒的に多いです。現場で学ばせていただいたことを踏まえ、様々な世代が政治に関わるきっかけをもっと作りたいと考えています。
-				
+					ul.arrows
+						li.is-prev.swiper-button-prev
+							img(src="~/assets/images/contents/support_arrow_left.png", alt="prev")
+						li.is-next.swiper-button-next
+							img(src="~/assets/images/contents/support_arrow_right.png", alt="next")
 				.block.is-link
 					.area.is-large
-						a(href="#")
+						a(href="https://docs.google.com/forms/d/e/1FAIpQLSe1_JA0N3MoKO-t-1ZWIvkdl5lqA4SaBRp-tv-ebnDRNzkm2g/viewform", target="_blank")
 							.box.is-text
 								h4.title
 									m-basePicture(src="support_btn_title01.png", alt="市來ハヤトの応援をお願い致します！")
@@ -50,13 +54,13 @@
 								p.btn
 									span 応援する
 					.area.is-middle
-						a(href="#")
+						a(href="https://o-ishin.jp/about/joinus/" target="_blank")
 							h4.title 党員登録
-							p.text テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+							p.text 日本維新の会では、党員として日本維新の会を支えてくださる方を募集いたします。ご賛同いただける方はご登録をお願い致します。
 							p.btn
 								span 詳しく見る
 					.area.is-middle
-						a(href="#")
+						a(href="https://o-ishin.jp/about/joinus/" target="_blank")
 							h4.title 同志会入会のお願い
 							p.text 政治家としてさらに飛躍するため、
 								br
@@ -86,6 +90,10 @@
 				spaceBetween: 3 + '%',
 				loop: false,
 				// centeredSlides : true,
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
 			})
 		},
 		computed:{},
@@ -102,7 +110,40 @@
 			margin 0 auto
 			.group.is-contents
 				.block.is-slider
+					position relative
 					margin-bottom 60px
+					.arrows
+						position absolute
+						top 145px
+						left 0
+						width 100%
+						+MQ_MAX(RES_WID_MEDIUM01)
+							top 25%
+						+MQ_MAX(RES_WID_SMALL01)
+							top 30%
+						li
+							width 110px
+							height 110px
+							+MQ_MAX(RES_WID_MEDIUM01)
+								width 60px
+								height 60px
+							+MQ_MAX(RES_WID_SMALL01)
+								width 14svw
+								height 14svw
+							img
+								width 100%
+							&::after
+								content none
+							&:nth-of-type(1)
+								transform translate3d(calc(-100% - 30px), 0, 0)
+								+MQ_MAX(1590px)
+									transform translate3d(0, 0, 0)
+
+							&:nth-of-type(2)
+								transform translate3d(calc(100% + 30px), 0, 0)
+								+MQ_MAX(1590px)
+									transform translate3d(0, 0, 0)
+
 					.swiper-wrapper
 						.swiper-slide
 							width 400px

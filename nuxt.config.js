@@ -14,7 +14,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: '市来ハヤト公式サイトは、維新の会・大阪府議会議員として、大阪・高槻の課題解決に取り組む市来ハヤトの活動を報告します。教育無償化都市の実現を中心とした改革を維新の実行力で実現します。活動報告などを掲載し、進捗状況などをお伝えします。是非、ご覧ください。 ' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -67,5 +67,14 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+  // router: {
+  //   extendRoutes(routes, resolve) {
+  //     routes.push({
+  //       path: '/news/:p',
+  //       component: resolve(__dirname, 'pages/news/index.vue'),
+  //       name: 'newsPage',
+  //     })
+  //   },
+  // },
 }

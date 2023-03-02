@@ -11,8 +11,25 @@
 				.area.is-name
 					p.name
 						m-basePicture(src="mainvisual_name_img01.png", alt="市来 ハヤト")
+			.block.is-news
+				.area.is-list
+					dl
+						dt
+							span {{ news[0].publishedAtJp }}
+						dd
+							nuxt-link(:to="'/news/detail/' + news[0].id")
+								span {{ news[0].title }}
+				.area.is-btn
+					nuxt-link(:to="'/news/'")
+						span
+						span
+						span
+				
 </template>
 <script>
+	import dayjs from 'dayjs';
+	import utc from 'dayjs/plugin/utc';
+	import timezone from 'dayjs/plugin/timezone';
 	export default {
 		name: 'c-mainvisualSet01',
 		data() {
@@ -20,8 +37,27 @@
 				// data: [],
 			};
 		},
-		props: {},
+		props: {
+			news: {
+				type: Array,
+				required: true,
+			},
+		},
 		created() {},
+		beforeMount() {
+			dayjs.extend(utc);
+			dayjs.extend(timezone);
+
+			var publishedAtJp = {
+				'publishedAtJp': ''
+			};
+
+			this.news.forEach(function(element, index){
+				publishedAtJp['publishedAtJp'] = dayjs.utc(element['publishedAt']).tz('Asia/Tokyo').format('YYYY-MM-DD');
+				publishedAtJp['publishedAtJp'] = publishedAtJp['publishedAtJp'].replace(/-/g, '.');
+				Object.assign(element, publishedAtJp);
+			})
+		},
 		mounted() {},
 		computed:{},
 	}
@@ -54,7 +90,7 @@
 			position absolute
 			top 0
 			left 0
-			padding clamp(20px, 3%, 60px) clamp(10px, 2%, 30px)
+			padding clamp(20px, 3%, 60px) clamp(10px, 2%, 30px) clamp(60px, 5%, 80px)
 			width 100%
 			height 100%
 			box-sizing border-box
@@ -132,4 +168,115 @@
 									width 100%
 						img
 							width 100%
+				
+				&.is-news
+					overflow hidden
+					display flex
+					align-items center
+					position absolute
+					bottom 0
+					left clamp(10px, 2%, 30px)
+					z-index 1000
+					border-radius 10px
+					box-shadow 0 0 10px rgba(#000, 0.2)
+					transform translate3d(0, 50%, 0)
+
+					+MQ_MAX(RES_WID_MEDIUM01)
+						border-radius 8px
+					+MQ_MAX(RES_WID_SMALL01)
+						border-radius 6px
+
+					.area
+						&.is-list
+							height 100%
+
+							dl
+								display flex
+							
+							dt, dd
+								height 90px
+
+								+MQ_MAX(RES_WID_MEDIUM01)
+									height 80px
+								+MQ_MAX(RES_WID_SMALL01)
+									height 60px
+
+							dt
+								display flex
+								align-items center
+								padding 0 35px
+								color #FFF
+								background-color #169348
+								box-sizing border-box
+								fontSize(14)
+								+MQ_MAX(RES_WID_MEDIUM01)
+									padding 0 25px
+									fontSize(13)
+								+MQ_MAX(RES_WID_SMALL01)
+									padding 0 20px
+									fontSize(12)
+							dd
+								width 60svw
+								max-width 550px
+								a
+									overflow hidden
+									display flex
+									align-items center
+									width 100%
+									height 100%
+									padding 0 35px
+									color inherit
+									background-color #FFF
+									box-sizing border-box
+									fontSize(16)
+									text-decoration none
+									
+									+MQ_MAX(RES_WID_MEDIUM01)
+										padding 0 25px
+										fontSize(15)
+									+MQ_MAX(RES_WID_SMALL01)
+										padding 0 20px
+										fontSize(14)
+									
+									span
+										overflow hidden
+										white-space nowrap
+										text-overflow ellipsis
+
+						&.is-btn
+							width 90px
+							height 90px
+
+							+MQ_MAX(RES_WID_MEDIUM01)
+								width 80px
+								height 80px
+							+MQ_MAX(RES_WID_SMALL01)
+								width 60px
+								height 60px
+
+							a
+								display flex
+								flex-direction column
+								justify-content space-between
+								width 100%
+								height 100%
+								padding 34px 30px
+								background-color #000
+								box-sizing border-box
+								
+								+MQ_MAX(RES_WID_MEDIUM01)
+									padding 30px 28px
+								+MQ_MAX(RES_WID_SMALL01)
+									padding 22px 18px
+							
+							span
+								display block
+								width 100%
+								height 3px
+								background-color #fff
+								border-radius 100px
+
+								+MQ_MAX(RES_WID_MEDIUM01)
+									height 2px
+							
 </style>

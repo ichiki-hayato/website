@@ -33,7 +33,7 @@
 
 	.c-snsWidgetSet01
 		container-type inline-size
-		padding clamp(50px, 6%, 80px) clamp(20px, 3%, 40px)
+		padding clamp(80px, 8%, 160px) clamp(20px, 3%, 40px) clamp(50px, 6%, 80px)
 		.componentWrapper
 			display flex
 			justify-content space-between

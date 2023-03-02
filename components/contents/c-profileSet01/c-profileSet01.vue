@@ -28,19 +28,19 @@
 								li 予備自衛官補（※2019年退任）
 					.block.is-sns
 						.area.is-btn
-							a(href="#" target="_blank").btn.is-twitter
+							a(href="https://twitter.com/hayatoichiki" target="_blank").btn.is-twitter
 								span Twitter
 						.area.is-btn
-							a(href="#" target="_blank").btn.is-youtube
+							a(href="https://www.youtube.com/@oneosaka" target="_blank").btn.is-youtube
 								span YouTube
 						.area.is-btn
-							a(href="#" target="_blank").btn.is-facebook
+							a(href="https://www.facebook.com/ichikihayato.takatsuki/" target="_blank").btn.is-facebook
 								span Facebook
 						.area.is-btn
-							a(href="#" target="_blank").btn.is-instagram
+							a(href="https://www.instagram.com/ichikihayato.ishin/" target="_blank").btn.is-instagram
 								span Instagram
 						.area.is-btn
-							a(href="#" target="_blank").btn.is-line
+							a(href="https://line.me/R/ti/p/%40wiv7730u" target="_blank").btn.is-line
 								span Line公式アカウント
 							
 
