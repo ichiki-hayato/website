@@ -72,6 +72,9 @@
 			background-size contain
 			background-position bottom left
 			background-image url("~/assets/images/contents/section03_img01.png")
+
+			+MQ_MAX(RES_WID_SMALL01)
+				background-position bottom -50svw left
 			
 			.group.is-contents
 				display flex
@@ -79,6 +82,9 @@
 				padding clamp(60px, 10%, 130px) clamp(20px, 3%, 30px) clamp(80px, 16%, 170px)
 				max-width 1000px
 				width 100%
+
+				+MQ_MAX(RES_WID_SMALL01)
+					padding-bottom 100svw
 
 				
 				.inner

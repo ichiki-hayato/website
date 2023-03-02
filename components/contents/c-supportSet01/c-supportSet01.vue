@@ -283,7 +283,7 @@
 								background-position left top
 
 								+MQ_MAX(RES_WID_SMALL01)
-									width 55%
+									width 60%
 
 						.title
 							width 60%

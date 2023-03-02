@@ -216,7 +216,7 @@
 									padding 0 20px
 									fontSize(12)
 							dd
-								width 60svw
+								width 50svw
 								max-width 550px
 								a
 									overflow hidden

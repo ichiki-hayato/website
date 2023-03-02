@@ -220,7 +220,7 @@
 					fontSize(24)
 				
 				+MQ_MAX(RES_WID_SMALL01)
-					fontSize(17)
+					fontSize(15)
 
 	.m-middleTitle01
 		margin-bottom 15px

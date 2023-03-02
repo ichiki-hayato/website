@@ -51,7 +51,7 @@
 						margin-bottom 0
 				.btn
 					display table
-					max-width 200px
+					max-width 240px
 					width 100%
 					margin-bottom 20px
 					color #FFF
@@ -62,12 +62,12 @@
 					text-align center
 
 					+MQ_MAX(RES_WID_MEDIUM01)
-						max-width 160px
-						padding 15px 30px
+						// max-width 160px
+						padding 5px 20px
 
 					+MQ_MAX(RES_WID_SMALL01)
-						max-width 140px
-						padding 15px 20px
+						// max-width 140px
+						padding 5px 10px
 				
 					a
 						display block
