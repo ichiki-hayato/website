@@ -60,8 +60,8 @@
 							p.btn
 								span 詳しく見る
 					.area.is-middle
-						a(href="https://o-ishin.jp/about/joinus/" target="_blank")
-							h4.title 同志会入会のお願い
+						a(href="https://forms.gle/HDjsVkCZeyoqEh5p7" target="_blank")
+							h4.title 後援会入会のお願い
 							p.text 政治家としてさらに飛躍するため、
 								br
 								| 高槻市・島本町の皆様からの支えが必要です。
