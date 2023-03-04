@@ -141,7 +141,7 @@
 					top clamp(20px, 3%, 60px)
 					left clamp(10px, 2%, 30px)
 					width 21.5%
-					min-width 184px
+					min-width 220px
 					.logo
 						width 100%
 						img
@@ -159,7 +159,7 @@
 								max-width 426px
 
 								+MQ_MAX(RES_WID_SMALL01)
-									width 70%
+									width 85%
 						&.is-name
 							.name
 								width 66%
