@@ -35,7 +35,8 @@
 	@import "~/assets/stylus/_s_mixin"
 
 	.c-globalFooter01
-		background-color #000000
+		// background-color #000000
+		background-color #1A82AF
 		.componentWrapper
 			max-width 1000px
 			margin 0 auto
@@ -84,7 +85,7 @@
 			.block.is-copyright
 				margin-top 20px
 				padding-top 20px
-				border-top 1px solid #3A3A3A
+				border-top 1px solid #62A7C4
 				fontSize(11)
 				text-align center
 	

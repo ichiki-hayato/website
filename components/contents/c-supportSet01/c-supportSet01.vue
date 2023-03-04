@@ -261,7 +261,8 @@
 
 					.area.is-large
 						width 100%
-						background linear-gradient(to right, #FFA800, #FF4D00)
+						// background linear-gradient(to right, #FFA800, #FF4D00)
+						background linear-gradient(to right, #1FA1CA, #044DA4)
 
 						a
 							display flex
