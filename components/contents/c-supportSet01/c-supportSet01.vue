@@ -12,9 +12,9 @@
 							h4.subTitle 今自分に出来ることを考えて
 								br
 								| 速やかに行動へ
-							p.text 2011.3.11東日本大震災の発生を受け、支援物資としてトイレットペーパー10,000個を集める「10000ロールプロジェクト」活動をスタート。地元の仲間たちと高槻市内のお宅を一軒一軒をご訪問しトイレットペーパーを集めてまわり、被災地や各自治体の避難所にお届けしました。
+							p.text 2011.3.11東日本大震災の発生を受け、 支援物資としてトイレットペーパー10,000個を集める「10000ロールプロジェクト」をスタート。地元の仲間たちと高槻市内のお宅を一軒一軒をご訪問しトイレットペーパーを集めてまわり、被災地や各自治体の避難所にお届けしました。
 								br
-								| また、福島県に行った際に、被災地での自衛隊の活躍に感銘を受け、予備自衛官になることを決意。現在も定期的に招集訓練に参加しています。
+								| また、被災地での自衛隊の活躍に感銘を受け、予備自衛官になることを決意。予備自衛官の招集訓練にも参加しました。
 						.swiper-slide
 							.image
 								m-basePicture(src="support_image02.png", alt="今自分に出来ることを考えて")
@@ -23,7 +23,7 @@
 							h4.subTitle 神輿と祭で
 								br
 								| 地域の繋がりを守る
-							p.text 毎年8月に、高槻市の「津之江北町」で開催している小さな夏祭りです。四十数年前に祖父が立ち上げて以来、沢山の方に支えていただき、毎年開催しています。
+							p.text 毎年8月に、高槻市「津之江北町」で開催している地元の夏祭りです。1979年に祖父が立ち上げて以来、沢山の方にお支えいただき、毎年開催しています。
 								br
 								| 現在は、私が夏祭り振興会の会長を拝命し、若手担ぎ手の育成や町内外問わずお祭りに関われる仕組みづくり等を行なっています。神輿を通じて世代を超えた繋がりが続くようみんなで頑張って担ぎ続けます。
 						.swiper-slide
@@ -34,39 +34,47 @@
 							h4.subTitle 議員秘書・市議会議員として
 								br
 								| 現場で培った力を活かす
-							p.text 議員は「○○先生」と呼ばれてはいけない。
+							p.text 議員は「先生」と呼ばれてはいけない。
 								br
-								| 地元の方があってこその議員であり、「先生」という言葉は有権者の皆さまに当てはまると感じています。実際、池下卓事務所には様々なご相談や陳情事が寄せられており、そこから学びや政策につながることが圧倒的に多いです。現場で学ばせていただいたことを踏まえ、様々な世代が政治に関わるきっかけをもっと作りたいと考えています。
+								| 地元の方があってこその議員であり「先生」という言葉は有権者の皆さまに当てはまると感じています。様々な業種や立場の方からのお困りごとを聞かせていただく中で、そこから新たな学びや政策、議会での質問につながることが沢山あります。議員秘書・市議会議員としての学びを活かし、政治をもっと身近なものにしていきます。
 					ul.arrows
 						li.is-prev.swiper-button-prev
 							img(src="~/assets/images/contents/support_arrow_left.png", alt="prev")
 						li.is-next.swiper-button-next
 							img(src="~/assets/images/contents/support_arrow_right.png", alt="next")
 				.block.is-link
-					.area.is-large
-						a(href="https://docs.google.com/forms/d/e/1FAIpQLSe1_JA0N3MoKO-t-1ZWIvkdl5lqA4SaBRp-tv-ebnDRNzkm2g/viewform", target="_blank")
-							.box.is-text
-								h4.title
-									m-basePicture(src="support_btn_title01.png", alt="市來ハヤトの応援をお願い致します！")
-								p.text 市來ハヤトの活動を、みなさまのご支援でお支えいただけないでしょうか。
-									br
-									| いただいたご寄付は、印刷費や通信費を中心に有効に使わせていただきます。
-								p.btn
+					//- .area.is-large
+					//- 	a(href="https://docs.google.com/forms/d/e/1FAIpQLSe1_JA0N3MoKO-t-1ZWIvkdl5lqA4SaBRp-tv-ebnDRNzkm2g/viewform", target="_blank")
+					//- 		.box.is-text
+					//- 			h4.title
+					//- 				m-basePicture(src="support_btn_title01.png", alt="市來ハヤトの応援をお願い致します！")
+					//- 			p.text 政治もまちづくりもひとりではできません。市来ハヤトの活動を、
+					//- 				br
+					//- 				| 皆様のご支援でお支えいただけないでしょうか。
+					//- 				br
+					//- 				| 皆様からのご支援を力に、まちづくりに全力で取り組みます。
+					//- 			p.btn
 									span 応援する
+					.area.is-middle
+						a(href="https://docs.google.com/forms/d/e/1FAIpQLSe1_JA0N3MoKO-t-1ZWIvkdl5lqA4SaBRp-tv-ebnDRNzkm2g/viewform" target="_blank")
+							h4.title 市来ハヤトを応援する！
+							p.text 政治もまちづくりもひとりではできません。市来ハヤトの活動を、皆様のご支援でお支えいただけないでしょうか。皆様からのご支援を力に、まちづくりに全力で取り組みます。
+							p.btn
+								span 応援する
 					.area.is-middle
 						a(href="https://o-ishin.jp/about/joinus/" target="_blank")
 							h4.title 党員登録
 							p.text 日本維新の会では、党員として日本維新の会を支えてくださる方を募集いたします。ご賛同いただける方はご登録をお願い致します。
 							p.btn
 								span 詳しく見る
-					.area.is-middle
-						a(href="https://forms.gle/HDjsVkCZeyoqEh5p7" target="_blank")
-							h4.title 後援会入会のお願い
-							p.text 政治家としてさらに飛躍するため、
-								br
-								| 高槻市・島本町の皆様からの支えが必要です。
-							p.btn
-								span 詳しく見る
+					//- .area.is-middle
+					//- 	a(href="https://forms.gle/HDjsVkCZeyoqEh5p7" target="_blank")
+					//- 		h4.title 後援会入会のお願い
+					//- 		p.text 政治家としてさらに飛躍するため、
+					//- 			br
+					//- 			| 高槻市・島本町の皆様からの支えが必要です。
+					//- 		p.btn
+					//- 			span 詳しく見る
 
 
 </template>
@@ -146,7 +154,7 @@
 
 					.swiper-wrapper
 						.swiper-slide
-							width 400px
+							width 300px
 							+MQ_MAX(RES_WID_MEDIUM01)
 								width 40%
 							+MQ_MAX(RES_WID_SMALL01)
