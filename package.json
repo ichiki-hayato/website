@@ -42,6 +42,7 @@
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "^1.4.0",
     "@nuxt/types": "^2.15.8",
-    "@nuxt/typescript-build": "^2.1.0"
+    "@nuxt/typescript-build": "^2.1.0",
+    "@volar/vue-language-plugin-pug": "latest"
   }
 }
