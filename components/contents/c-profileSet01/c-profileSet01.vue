@@ -34,7 +34,7 @@
 							a(href="https://www.youtube.com/@oneosaka" target="_blank").btn.is-youtube
 								span YouTube
 						.area.is-btn
-							a(href="https://www.facebook.com/ichikihayato.takatsuki/" target="_blank").btn.is-facebook
+							a(href="https://www.facebook.com/ichikihayato.ishin" target="_blank").btn.is-facebook
 								span Facebook
 						.area.is-btn
 							a(href="https://www.instagram.com/ichikihayato.ishin/" target="_blank").btn.is-instagram
