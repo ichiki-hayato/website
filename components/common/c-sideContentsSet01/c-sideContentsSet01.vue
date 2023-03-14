@@ -85,7 +85,7 @@
 					justify-content space-between
 					padding 10px
 					box-sizing border-box
-					@media screen and (max-height: 700px) {
+					@media screen and (max-height: 750px) {
 						padding 5px
 					}
 					
@@ -107,7 +107,7 @@
 						background-image url("~/assets/images/contents/sidebar01_back_img01.png")
 						background-position bottom right
 						background-size 100%
-						@media screen and (max-height: 700px) {
+						@media screen and (max-height: 750px) {
 							background-position bottom 50% right
 						}
 						@media screen and (min-height: 1000px) {
@@ -125,7 +125,7 @@
 							.title
 								width 100%
 								margin 0 auto
-								@media screen and (max-height: 700px) {
+								@media screen and (max-height: 750px) {
 									width 60%
 								}
 								img
@@ -139,7 +139,7 @@
 							gap 10px
 							.top
 								width 30%
-								@media screen and (max-height: 700px) {
+								@media screen and (max-height: 750px) {
 									width 20%
 								}
 								img

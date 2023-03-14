@@ -51,7 +51,12 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     'nuxt-microcms-module',
+    '@nuxtjs/google-gtag',
   ],
+  "google-gtag": {
+    id: "G-J8867LD2LK",
+    debug: true
+  },
   microcms: {
     options: {
       serviceDomain: process.env.SERVICE_DOMAIN,
