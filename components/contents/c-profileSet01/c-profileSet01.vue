@@ -42,6 +42,9 @@
 						.area.is-btn
 							a(href="https://line.me/R/ti/p/%40wiv7730u" target="_blank").btn.is-line
 								span Line公式アカウント
+						.area.is-btn
+							a(href="http://takenakaken.net/texts/" target="_blank").btn.is-activity
+								span 活動配布チラシバックナンバー
 							
 
 </template>
@@ -285,6 +288,11 @@
 										background-color #06C755
 										&:before
 											background-image url("~/assets/images/contents/section03_sns_icon05.png")
+
+									&.is-activity
+										background-color #000
+										&:before
+											background-image none
 										
 
 
