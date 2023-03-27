@@ -42,9 +42,9 @@
 						.area.is-btn
 							a(href="https://line.me/R/ti/p/%40wiv7730u" target="_blank").btn.is-line
 								span Line公式アカウント
-						.area.is-btn
-							a(href="http://takenakaken.net/texts/" target="_blank").btn.is-activity
-								span 活動配布チラシバックナンバー
+						//- .area.is-btn
+						//- 	a(href="#" target="_blank").btn.is-activity
+						//- 		span 活動配布チラシバックナンバー
 							
 
 </template>
