@@ -25,9 +25,9 @@
 		name: 'IndexPage',
 		layout: "l-mainWrapper01",
 		head: {
-			title: '市来ハヤト公式サイト - 維新の会・大阪府・高槻市を前へ',
+			title: '市来ハヤト 公式サイト ー大阪維新の会ー',
 			meta: [
-				{ hid: 'description', name: 'description', content: '大阪維新の会  市来ハヤトの公式サイトです。大阪府と高槻市・島本町の未来づくりに挑戦します。' }
+				{ hid: 'description', name: 'description', content: '大阪維新の会 大阪府議会議員 市来ハヤトの公式サイトです。大阪府の発展と高槻市・島本町の未来づくりに挑戦します。' }
 			]
 		},
 		data() {
