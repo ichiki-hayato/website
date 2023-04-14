@@ -7,7 +7,7 @@
 			.block.is-text
 				.area.is-text
 					p.text
-						m-basePicture(src="mainvisual_text_img01.png", alt="3.31 金 告示 大阪府議会議員選挙において「大阪維新の会 公認」が決定しました")
+						m-basePicture(src="mainvisual_text_img01.png", alt="大阪府議会議員")
 				.area.is-name
 					p.name
 						m-basePicture(src="mainvisual_name_img01.png", alt="市来 ハヤト")
@@ -159,7 +159,7 @@
 								max-width 426px
 
 								+MQ_MAX(RES_WID_SMALL01)
-									width 85%
+									width 55%
 						&.is-name
 							.name
 								width 66%

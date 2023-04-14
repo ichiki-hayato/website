@@ -44,7 +44,7 @@
 								span Line公式アカウント
 						.area.is-btn
 							a(href="backnumber/" target="_blank").btn.is-activity
-								span 活動配布チラシバックナンバー
+								span 活動報告チラシバックナンバー
 							
 
 </template>
@@ -290,7 +290,7 @@
 											background-image url("~/assets/images/contents/section03_sns_icon05.png")
 
 									&.is-activity
-										background-color #000
+										background-color #005FDB
 										&:before
 											background-image none
 										
