@@ -5,7 +5,7 @@
 				.componentWrapper
 					.block.is-title
 						h1.title
-							span 活動配布チラシバックナンバー
+							span 活動報告チラシバックナンバー
 					.block.is-backnumber
 						dl
 							.area.is-backnumber(v-for="(list, index) of backnumber")
@@ -34,7 +34,7 @@
 		name: 'BacknumberPage',
 		layout: "l-mainWrapper01",
 		head: {
-			title: '活動配布チラシバックナンバー | 市来ハヤト 公式サイト ー大阪維新の会ー',
+			title: '活動報告チラシバックナンバー | 市来ハヤト 公式サイト ー大阪維新の会ー',
 			meta: [
 				{ hid: 'description', name: 'description', content: '市来ハヤト公式サイトは、維新の会・大阪府議会議員として、大阪・高槻の課題解決に取り組む市来ハヤトの活動を報告します。教育無償化都市の実現を中心とした改革を維新の実行力で実現します。活動報告などを掲載し、進捗状況などをお伝えします。是非、ご覧ください。 ' }
 			]
