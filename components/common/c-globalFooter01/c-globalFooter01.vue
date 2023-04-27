@@ -4,9 +4,9 @@
 			.group.is-contents
 				.block.is-contents
 					p.text 市来ハヤト府政対策事務所
-					p.text 住所：〒569-0804
-						br
-						| 大阪府高槻市紺屋町11-1 FKビル2F
+					//- p.text 住所：〒569-0804
+					//- 	br
+					//- 	| 大阪府高槻市紺屋町11-1 FKビル2F
 					p.btn
 						a(href="https://goo.gl/maps/vnG13MRBj3T88Axs8", target="_blank")
 							span Google Map
