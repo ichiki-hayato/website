@@ -12,14 +12,13 @@
 								nuxt-link(:to="'/news/detail/' + list.id")
 									dt.date {{list.publishedAtJp}}
 									dd.text {{list.title}}
-					
+
 					.block.is-btn
 						p.btn
 							nuxt-link(:to="'/'")
 								span トップページへ
 
-					
-						 
+
 
 </template>
 <script>
@@ -145,19 +144,19 @@
 				fontSize(13)
 			+MQ_MAX(RES_WID_SMALL01)
 				fontSize(12)
-		
+
 		.text
 			fontSize(16)
 			+MQ_MAX(RES_WID_MEDIUM01)
 				fontSize(15)
 			+MQ_MAX(RES_WID_SMALL01)
 				fontSize(14)
-		
+
 		.btn
 			display table
 			max-width 200px
 			width 100%
-			
+
 			color #FFF
 			background-color #000
 			box-shadow 0 0 20px rgba(#000, 0.3)
@@ -172,7 +171,7 @@
 				padding 15px 40px
 				border-radius 100px
 				transition all 0.3s ease
-				
+
 				&:hover
 					color #000
 					background-color #FFF

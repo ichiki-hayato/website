@@ -5,7 +5,7 @@
 				.block.is-btn
 					a(href="https://docs.google.com/forms/d/e/1FAIpQLSe1_JA0N3MoKO-t-1ZWIvkdl5lqA4SaBRp-tv-ebnDRNzkm2g/viewform", target="_blank")
 						m-basePicture(src="support_banner_btn01.png", alt="市来ハヤトを！応援する")
-						 
+
 		.js-sideTypeSet.is-type01
 			c-mainvisualSet01(:news = 'news')
 		.js-sideTypeSet.is-type02
@@ -95,7 +95,7 @@
 
 		+MQ_MAX(RES_WID_SMALL01)
 			width 55%
-			
+
 		a
 			display block
 			transition opacity 0.3s ease

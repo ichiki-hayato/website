@@ -10,13 +10,12 @@
 									p.date {{list.publishedAtJp}}
 									h2.title(v-html="list.title")
 								.block.is-contents(v-html="list.body")
-								
+
 								.block.is-btn
 									p.btn
 										nuxt-link(:to="'/news/'")
 											span 戻る
-					
-						 
+
 
 </template>
 <script>
@@ -111,7 +110,7 @@
 				.title
 					font-size clamp(1.6rem, 3cqw, 2.8rem)
 					font-weight bold
-			
+
 			.block.is-contents
 				margin-top 3%
 				overflow-wrap break-word
@@ -136,10 +135,10 @@
 				p
 					margin-top 1%
 					font-size clamp(1.2rem, 1.6cqw, 1.6rem)
-				
+
 				*:first-child
 					margin-top 0
-			
+
 			.block.is-btn
 				margin-top 6%
 				a
@@ -151,7 +150,7 @@
 					display table
 					max-width 200px
 					width 100%
-					
+
 					color #FFF
 					background-color #000
 					box-shadow 0 0 20px rgba(#000, 0.3)
@@ -166,7 +165,7 @@
 						padding 15px 40px
 						border-radius 100px
 						transition all 0.3s ease
-						
+
 						&:hover
 							color #000
 							background-color #FFF

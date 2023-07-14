@@ -8,8 +8,8 @@
 				.area.is-bottom
 					p.top
 						m-basePicture(src="sidebar01_bottom_name01.png", alt="吉村洋文")
-					p.bottom
-						m-basePicture(src="sidebar01_bottom_img01.png", alt="松浪健太 池下卓 松井一郎")
+					//- p.bottom
+					//- 	m-basePicture(src="sidebar01_bottom_img01.png", alt="松浪健太 池下卓 松井一郎")
 
 			.block.is-type02
 				.area.is-top
@@ -19,7 +19,7 @@
 					.text
 						m-basePicture(src="sidebar02_bottom_img01.png", alt="維新だからできる 教育無償都市の実現へ")
 				.area.is-bg
-			
+
 			.block.is-type03
 				.area.is-text
 					p.title
@@ -88,7 +88,7 @@
 					@media screen and (max-height: 750px) {
 						padding 5px
 					}
-					
+
 					background-color #31C0F0
 					&::before, &::after
 						content ""
@@ -116,7 +116,7 @@
 								background-position bottom right 20%
 							}
 						}
-					
+
 					.area
 						position relative
 						z-index 1000
@@ -131,7 +131,7 @@
 								img
 									width 100%
 									height auto
-						
+
 						&.is-bottom
 							display flex
 							flex-direction column
@@ -183,21 +183,21 @@
 								@media screen and (max-height: 800px) {
 									width 80%
 								}
-								
+
 								img
 									width 100%
 									height auto
 						&.is-bottom
 							position relative
 							z-index 100
-							
+
 							.text
 								width 100%
 								@media screen and (max-height: 800px) {
 									width 70%
 								}
 
-								
+
 								img
 									width 100%
 									height auto
@@ -239,7 +239,7 @@
 									background-size cover
 								}
 
-						
+
 				&.is-type03
 					display flex
 					flex-direction column
@@ -281,7 +281,7 @@
 							@media screen and (max-height: 800px) {
 								width 30%
 							}
-							
+
 							img
 								width 100%
 
