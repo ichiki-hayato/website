@@ -266,7 +266,7 @@
 
 						@media screen and (max-height: 800px) {
 							background-size 100%
-							background-position top right
+							background-position bottom right
 						}
 
 						@media screen and (min-height: 1000px) {
