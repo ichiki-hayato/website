@@ -108,7 +108,7 @@
 						background-position bottom right
 						background-size 100%
 						@media screen and (max-height: 750px) {
-							background-position bottom 50% right
+							background-position bottom right
 						}
 						@media screen and (min-height: 1000px) {
 							background-size cover
